@@ -13,9 +13,49 @@
 
   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-Desaturated-blue">
+<body class="bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-center bg-cover">
 <main>
- 
+  <div class="card max-w-md pb-4 overflow-hidden m-auto mt-24 rounded-2xl bg-Very-pale-blue shadow-2xl">
+
+    <div class="card__image">
+      <img class="w-full" src="./images/illustration-hero.svg" alt="hero image">
+    </div>
+
+    <div class="card__wrapper max-w-[80%] mt-12
+                m-auto text-center text-Desaturated-blue">
+     
+      <h1 class="card__title text-Dark-blue font-black text-3xl">
+        Order Summary
+      </h1>
+
+      <p class="card__text mt-5 text-base ">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+
+      <div class="card__plan mt-12 flex items-center pr-6 pl-6">
+        <img class="card__plan-icon mr-5" src="./images/icon-music.svg" alt="music icon">
+        
+        <div class="card__plan-info flex flex-col justify-center">
+          <h2 class="card__subtitle font-bold text-Dark-blue">
+            Annual Plan
+          </h2>
+          <p class="card__price">
+            $59.99/year
+          </p>
+        </div>
+        
+        <a href="#" class="card__change-link ml-auto text-inherit underline">Change</a>
+      </div>
+
+      <div class="card__btn-group mt-14">
+        <button class="card__btn btn bg-Bright-blue text-Pale-blue">Proceed to Payment</button>
+        <button class="card__btn btn">Cancel Order</button>
+      </div>
+
+    </div>
+
+  </div>
 </main>
  
 </body>
