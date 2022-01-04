@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-center bg-cover">
+<body class="bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-right bg-cover">
 <main>
   <div class="card max-w-md pb-4 overflow-hidden m-auto mt-24 rounded-2xl bg-Very-pale-blue shadow-2xl">
 
@@ -45,12 +45,19 @@
           </p>
         </div>
         
-        <a href="#" class="card__change-link ml-auto text-inherit underline">Change</a>
+        <a class="card__change-link
+                  transition duration-1000 ease-in-out
+                  ml-auto text-inherit underline font-medium cursor-pointer
+                  hover:font-bold hover:text-Bright-blue hover:no-underline 
+                 " href="#" >
+                  Change</a>
       </div>
 
       <div class="card__btn-group mt-14">
-        <button class="card__btn btn bg-Bright-blue text-Pale-blue">Proceed to Payment</button>
-        <button class="card__btn btn">Cancel Order</button>
+        <button class="card__btn btn bg-Bright-blue text-Pale-blue
+                        transition duration-700 ease-in-out
+                        hover:bg-Desaturated-blue ">Proceed to Payment</button>
+        <button class="card__btn btn transition duration-700 ease-in-out hover:text-Dark-blue">Cancel Order</button>
       </div>
 
     </div>

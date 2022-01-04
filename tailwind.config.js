@@ -10,7 +10,6 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Red Hat Display"', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
     },
     extend: {},
   },
