@@ -13,18 +13,19 @@
 
   <link rel="stylesheet" href="./output.css">
 </head>
-<body class="bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-right bg-cover">
-<main>
-  <div class="card max-w-md pb-4 overflow-hidden m-auto mt-24 rounded-2xl bg-Very-pale-blue shadow-2xl">
+<body >
+<main class="pt-24 pb-24 bg-[url('./images/pattern-background-mobile.svg')] 
+  sm:bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-[right_bottom_10rem] bg-cover">
+  <div class="card max-w-xs sm:max-w-md pb-4 overflow-hidden m-auto rounded-2xl bg-Very-pale-blue shadow-2xl">
 
     <div class="card__image">
       <img class="w-full" src="./images/illustration-hero.svg" alt="hero image">
     </div>
 
-    <div class="card__wrapper max-w-[80%] mt-12
+    <div class="card__wrapper max-w-[85%] sm:max-w-[80%] mt-8 sm:mt-12
                 m-auto text-center text-Desaturated-blue">
      
-      <h1 class="card__title text-Dark-blue font-black text-3xl">
+      <h1 class="card__title text-Dark-blue font-black text-xl sm:text-3xl">
         Order Summary
       </h1>
 
@@ -33,27 +34,27 @@
         device anywhere you like!
       </p>
 
-      <div class="card__plan mt-12 flex items-center pr-6 pl-6">
-        <img class="card__plan-icon mr-5" src="./images/icon-music.svg" alt="music icon">
+      <div class="card__plan mt-12 flex items-center pr-4 pl-4 sm:pr-6 sm:pl-6">
+        <img class="card__plan-icon mr-6 sm:mr-5" src="./images/icon-music.svg" alt="music icon">
         
         <div class="card__plan-info flex flex-col justify-center">
-          <h2 class="card__subtitle font-bold text-Dark-blue">
+          <h2 class="card__subtitle font-bold text-Dark-blue text-sm sm:text-base">
             Annual Plan
           </h2>
-          <p class="card__price">
+          <p class="card__price text-sm sm:text-base">
             $59.99/year
           </p>
         </div>
         
         <a class="card__change-link
-                  transition duration-1000 ease-in-out
-                  ml-auto text-inherit underline font-medium cursor-pointer
+                  transition duration-1000 ease-in-out text-sm sm:text-base
+                  ml-auto text-Dark-blue underline font-medium cursor-pointer
                   hover:font-bold hover:text-Bright-blue hover:no-underline 
                  " href="#" >
                   Change</a>
       </div>
 
-      <div class="card__btn-group mt-14">
+      <div class="card__btn-group mt-9 sm:mt-14">
         <button class="card__btn btn bg-Bright-blue text-Pale-blue
                         transition duration-700 ease-in-out
                         hover:bg-Desaturated-blue ">Proceed to Payment</button>
