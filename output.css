@@ -438,6 +438,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -774,6 +782,63 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:bottom-0::before {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:bg-Very-pale-blue::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(225 100% 98% / var(--tw-bg-opacity));
+}
+
+.before\:bg-Desaturated-blue::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: hsl(224 23% 55% / var(--tw-bg-opacity));
+}
+
+.before\:opacity-5::before {
+  content: var(--tw-content);
+  opacity: 0.05;
+}
+
+.before\:opacity-75::before {
+  content: var(--tw-content);
+  opacity: 0.75;
+}
+
+.before\:opacity-50::before {
+  content: var(--tw-content);
+  opacity: 0.5;
+}
+
+.before\:opacity-60::before {
+  content: var(--tw-content);
+  opacity: 0.6;
 }
 
 .hover\:bg-Desaturated-blue:hover {
